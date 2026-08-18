@@ -5,14 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.Instant;
 
-import org.springframework.stereotype.Service;
-import jakarta.annotation.PostConstruct;
+import org.springframework.stereotype.Component;
 
-@Service
+@Component
 public class SystemInfo {
 
-    @PostConstruct
-    public void init() throws IOException {
+    public void getInfo() throws IOException {
         System.out.println("Hello World!");
 
         try {
