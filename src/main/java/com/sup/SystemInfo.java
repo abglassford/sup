@@ -15,6 +15,7 @@ public class SystemInfo {
 
         try {
             System.out.println(Instant.now() + "\n");
+            // TODO: Parse system info better for better logging
             runCommand("cat", "/etc/os-release");
             runCommand("cat", "/proc/stat");
             runCommand("cat", "/proc/meminfo");
